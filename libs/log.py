@@ -1,6 +1,6 @@
 #-------------------------------
-# logging functions
-# abow-robot studio, 11/10/2019
+# logging into file and stderr
+# JackRobot Studio, 11/10/2019
 #-------------------------------
 import sys
 import time

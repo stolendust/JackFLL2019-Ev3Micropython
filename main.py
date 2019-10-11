@@ -1,4 +1,5 @@
 #!/usr/bin/env pybricks-micropython
+from time import perf_counter
 
 from pybricks import ev3brick as brick
 from pybricks.ev3devices import (Motor, TouchSensor, ColorSensor,
@@ -7,7 +8,6 @@ from pybricks.parameters import (Port, Stop, Direction, Button, Color,
                                  SoundFile, ImageFile, Align)
 from pybricks.tools import print, wait, StopWatch
 from pybricks.robotics import DriveBase
-
 
 from libs import config
 from libs import log
@@ -25,6 +25,8 @@ def main():
     lmoter.run_time(-100, 2000)
 
 if __name__ == '__main__':
-    log.debug('>>> brickrun main()')
+    startTime = perf_counter()
+    log.debug('>>> brickrun - main')
     main()
-    log.debug('<<< brickrun main()')
+    usedTime = perf_counter() - startTime
+    log.debug("<<< brickrun - main, time used = %ds" % usedTime)
