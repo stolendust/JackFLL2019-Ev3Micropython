@@ -1,4 +1,10 @@
 #!/usr/bin/env pybricks-micropython
+
+#-------------------------------
+# main entry  
+# JackRobot Studio, 11/10/2019
+#-------------------------------
+
 from time import perf_counter
 
 from pybricks import ev3brick as brick
