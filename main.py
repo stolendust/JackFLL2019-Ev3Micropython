@@ -14,9 +14,11 @@ from libs import log
 
 
 def main():
+    # sound test
     log.info('test beep')
     brick.sound.beep()
 
+    # moter test
     log.info('test large moter')
     lmoter = Motor(Port.A)
     lmoter.run_time(300, 3000)
