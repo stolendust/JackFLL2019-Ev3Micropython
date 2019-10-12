@@ -3,5 +3,5 @@
 	"files.eol": "\n",
 	"debug.openDebug": "neverOpen",
 	"python.linting.enabled": false,
-	"ev3devBrowser.download.exclude": "**/*"
+	"ev3devBrowser.download.exclude": "**/.*"
 }

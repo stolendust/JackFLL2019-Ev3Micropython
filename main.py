@@ -35,4 +35,5 @@ if __name__ == '__main__':
     log.debug('>>> brickrun - main')
     main()
     usedTime = perf_counter() - startTime
-    log.debug("<<< brickrun - main, time used = %ds" % usedTime)
+    log.info("TOTAL TIME USED: %ds" % usedTime)
+    log.debug("<<< brickrun - main")

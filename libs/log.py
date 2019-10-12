@@ -17,7 +17,7 @@ def __log(message, level):
     time_stamp = "%s.%03d" % (data_head, data_secs)
 
     # write into log file
-    message_formated = '%s|%s: %s' % (time_stamp, logging._level_dict.get(level), message)
+    message_formated = '%s/%s: %s' % (time_stamp, logging._level_dict.get(level), message)
     with open(LOG['file'], "a") as f:
         f.write(message_formated + "\n")
 

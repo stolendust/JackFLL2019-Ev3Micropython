@@ -8,7 +8,7 @@ import logging
 
 LOG = {
     'file':'brickrun.log',
-    'level': logging.DEBUG
+    'level': logging.INFO
 }
 
 
