@@ -11,8 +11,8 @@ from pybricks.parameters import (Port, Stop, Direction, Button, Color,
 ROBOT = {
     'drive_motor_port_left' : Port.A,
     'drive_motor_port_right' : Port.D,
-    'wheel_axle_track' : 111, # distance between the midpoint of two wheels
-    'wheel_diameter' : 43.2,
+    'wheel_axle_track' : 107, # distance between the midpoint of two wheels
+    'wheel_diameter' : 62.4,
     'sensor_gyro_port' : Port.S2,
     'sensor_color_port' : Port.S1
 }

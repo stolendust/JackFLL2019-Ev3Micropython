@@ -18,7 +18,6 @@ from pybricks.robotics import DriveBase
 from libs.config import ROBOT 
 from libs import log
 
-
 def main():
     # sound test
     log.info('test beep')
@@ -31,19 +30,6 @@ def main():
     # gyro sensor test
     sensor_gyro = GyroSensor(ROBOT['sensor_gyro_port'])
     log.debug('gyro sensor: speed=%d, angle=%d' % (sensor_gyro.speed(), sensor_gyro.angle()))
-
-    # moter test
-    rotation = 10 
-    speed, angle = -1000, rotation * 360
-
-    log.info('test going straight, speed=%d, angle=%d, rotation=%d' % (speed, angle, rotation))
-    motor_right = Motor(ROBOT['drive_motor_port_left'])
-    motor_left = Motor(ROBOT['drive_motor_port_right'])
-
-    robot = DriveBase(motor_left, motor_right, ROBOT['wheel_diameter'], ROBOT['wheel_axle_track'])
-    robot.drive(50, 0)
-    wait(5000)
-    robot.stop()  
 
 if __name__ == '__main__':
     startTime = perf_counter()
